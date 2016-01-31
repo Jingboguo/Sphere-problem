@@ -1,4 +1,4 @@
-%STEP ONE: Group all the points into different vertical planes
+%% STEP ONE: Group all the points into different vertical planes
 % Input: points coordinate U=[theta1,x1,y1;theta2,x2,y2;...thetan,xn,yn]; 
 % working status W=[w1;w2;w3;...w4]
 promt1 = 'What are the coordinates of the points';
@@ -40,7 +40,7 @@ for i = 2 : 1 : m
     end
 end
 
-% STEP TWO : Check if all the vertical planes are balanced
+%% STEP TWO : Check if all the vertical planes are balanced
 % vp is a matrix of grouped theta 
 h=0; % count the number of vertical planes
 for i = 1 : 1 : m
