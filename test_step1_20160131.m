@@ -33,7 +33,7 @@ for i = 2 : 1 : m
                    break %did not work, because the for loop still works
                 end
             end
-        elseif VP (j, 1) == 0 && (VP (j, 2) == 0)
+        elseif ratio (i,1) ~= VP (j, 1) && (VP (j, 1) == 0) && (VP (j, 2) == 0)
             VP (j, 1) = ratio (i,1);
             VP (j, 2) = i;
         end

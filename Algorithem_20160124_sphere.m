@@ -78,7 +78,7 @@ for i = 1 : 1 : h
     end
 end
 
-% STEP THREE: Calculate the moment difference for each pair of axis
+%% STEP THREE: Calculate the moment difference for each pair of axis
 % First, since units on the same vertical plane will be on the same axis,
 % we extract one point from each vertical plane and save them in matrix P.
 P = matrix (h, 2);
@@ -155,7 +155,7 @@ for i = 1 : 1 : h
 end
 
 
-% STEP FOUR: Calulate the moment difference for all the other axis 
+%% STEP FOUR: Calulate the moment difference for all the other axis 
 P3 = matrix (359 * h, 2);
 syms x1 xnew y1 ynew
 for i = 1 : 1 : h
