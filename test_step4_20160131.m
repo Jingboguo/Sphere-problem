@@ -5,7 +5,6 @@ for i = 1 : 1 : h
     for j = 1 : 1 : 359
         x1 = P (i, 1);
         y1 = P (i, 2);
-        %r = (x1.^2 + y1.^2).^0.5;
         [slov1 , slov2] = solve ([(x1 .* xnew + y1 .* ynew) ./ (x1 .^2 + y1 .^2) == cos(j .* pi ./180), xnew ^2 + ynew ^2 == x1 ^2 + y1 ^2], [xnew, ynew]);
         P3 (i.*j, 1) = slov1 (1);
         P3 (i.*j, 2) = slov2 (1);
@@ -66,7 +65,7 @@ end
 S3 = sum (MD3, 2);
 S4 = sum (MD4, 2);
 for i = 1 : 1 : 359*h
-    if S3 (i) == S4 (i)
+    if S3 (i) == 0 && S4 (i) == 0
         disp (['System is balanced according to ', num2str(i), 'th axis']);
     else
         disp (['System is not balanced according to ', num2str(i), 'th axis']);

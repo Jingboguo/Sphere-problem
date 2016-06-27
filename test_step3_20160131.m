@@ -69,7 +69,7 @@ end
 S1 = sum (MD1, 2);
 S2 = sum (MD2, 2);
 for i = 1 : 1 : h
-    if S1 (i) == S2 (i)
+    if S1 (i) == 0 && S2 (i) == 0
         disp (['System is balanced according to ', num2str(i), 'th axis']);
     else
         disp (['System is not balanced according to ', num2str(i), 'th axis']);

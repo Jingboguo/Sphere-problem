@@ -1,0 +1,1 @@
+probability = wblcdf(0.5, 40,2)
