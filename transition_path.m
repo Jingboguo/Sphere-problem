@@ -34,7 +34,7 @@ for l = 1 : 1 : (n-k)*i % how many pairs fail
                                 Wtemp((i+1), (y+n)) = 0;
                             end
                             % check if balanced 
-                            flag = sbalance(k,n,i,Wtemp);
+                            flag = sbalance(n,i,Wtemp);
                             if flag == 1 % balanced
                                 W(:,:,m,j,l) = Wtemp;
                             end

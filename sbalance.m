@@ -1,4 +1,4 @@
-function [flag] = sbalance (~,n,i,Wtemp)
+function [flag] = sbalance (n,i,Wtemp)
 phi = 180/n; % angles on each planes
 theta = 180/i ; % angles of projected vertical planes
 % project all the units on the center line of each vertical plane. Z is a
