@@ -32,3 +32,4 @@ W3 = zeros(i+1,2*n,b);
 for j = 1 : 1 : b
     W3 (:,:,j)=W2(((j-1)*(i+1)+1):((j-1)*(i+1)+1+i),:);
 end
+W3 = samematrix(W3);
