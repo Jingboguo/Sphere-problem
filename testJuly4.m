@@ -1,7 +1,11 @@
-function [flag] = sbalance (Wtemp,t) % t is number of times that we cut!
-sw1 = size(Wtemp);
-i = sw1(1)-1;
-n = sw1(2)/2;
+promt1 = 'What are the values of k, n and i';
+U = input (promt1);
+promt2 = 'Please input the matrix of the configuration'; % should be redesigned
+Wtemp = input (promt2);
+k = U(1);
+n = U(2);
+i = U(3);
+t = 1;
 phi = 180/n; % angles on each planes
 theta = 180/i ; % angles of projected vertical planes
 % project all the units on the center line of each vertical plane. Z is a
@@ -110,3 +114,4 @@ for count = 1: 1: t;
         end
     end
 end
+
